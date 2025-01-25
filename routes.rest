@@ -32,3 +32,6 @@ Content-Type: application/json
     "favoriteColor": "Blue",
     "birthday": "06/23/1988"
 }
+
+###
+DELETE https://cse341-homework.onrender.com/contacts/679560e92d512d2eb4ce9e18 HTTP/1.1
