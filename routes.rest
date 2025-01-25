@@ -1,0 +1,8 @@
+### Here are the 3 local rest test connection links.
+GET http://localhost:8080/contacts
+###
+GET http://localhost:8080/contacts/6793f588d4dda804570167b7
+###
+GET http://localhost:8080/contacts/6793f5b3d4dda804570167b9
+###
+GET http://localhost:8080/contacts/6793f5cdd4dda804570167bb
