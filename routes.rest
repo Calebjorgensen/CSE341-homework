@@ -22,7 +22,9 @@ GET https://cse341-homework.onrender.com/contacts/6793f5b3d4dda804570167b9
 GET https://cse341-homework.onrender.com/contacts/6793f5cdd4dda804570167bb
 
 ###
-POST https://cse341-homework.onrender.com/contacts HTTP/1.1 content-type: application/json
+POST https://cse341-homework.onrender.com/contacts HTTP/1.1
+Content-Type: application/json
+
 {
     "firstName": "Cindi",
     "lastName": "Jorgensen",
