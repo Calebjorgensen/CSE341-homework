@@ -6,3 +6,27 @@ GET http://localhost:8080/contacts/6793f588d4dda804570167b7
 GET http://localhost:8080/contacts/6793f5b3d4dda804570167b9
 ###
 GET http://localhost:8080/contacts/6793f5cdd4dda804570167bb
+
+
+
+### Prod links
+GET https://cse341-homework.onrender.com/contacts
+
+###
+GET https://cse341-homework.onrender.com/contacts/6793f588d4dda804570167b7
+
+###
+GET https://cse341-homework.onrender.com/contacts/6793f5b3d4dda804570167b9
+
+###
+GET https://cse341-homework.onrender.com/contacts/6793f5cdd4dda804570167bb
+
+###
+POST https://cse341-homework.onrender.com/contacts HTTP/1.1 content-type: application/json
+{
+    "firstName": "Cindi",
+    "lastName": "Jorgensen",
+    "email": "cool@est.com",
+    "favoriteColor": "Blue",
+    "birthday": "06/23/1988"
+}
