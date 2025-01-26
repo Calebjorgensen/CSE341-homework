@@ -48,7 +48,7 @@ Content-Type: application/json
 }
 
 ### DELETE contact
-DELETE http://localhost:8080/contacts/6795ca8d6717b5649bdfa595 HTTP/1.1
+DELETE http://localhost:8080/contacts/6795cc3881d66586e5ce037f HTTP/1.1
 
 
 ### This is prod test for POST, PUT, DELETE
