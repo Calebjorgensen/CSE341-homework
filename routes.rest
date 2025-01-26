@@ -77,4 +77,4 @@ Content-Type: application/json
 }
 
 ### Delete contact
-DELETE https://cse341-homework.onrender.com/contacts HTTP/1.1
+DELETE https://cse341-homework.onrender.com/contactsHTTP/1.1
