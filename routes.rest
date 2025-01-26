@@ -21,7 +21,38 @@ GET https://cse341-homework.onrender.com/contacts/6793f5b3d4dda804570167b9
 ###
 GET https://cse341-homework.onrender.com/contacts/6793f5cdd4dda804570167bb
 
-###
+
+### This is local test for POST, PUT, DELETE
+### Create contact
+POST http://localhost:8080/contacts HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Cindi",
+    "lastName": "Jorgensen",
+    "email": "cool@est.com",
+    "favoriteColor": "Blue",
+    "birthday": "06/23/1988"
+}
+
+###PUT contact
+PUT http://localhost:8080/contacts/6793f5b3d4dda804570167b9 HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Paul",
+    "lastName": "Carter",
+    "email": "test1@test.com",
+    "favoriteColor": "Purple",
+    "birthday": "07/12/10"
+}
+
+### DELETE contact
+DELETE http://localhost:8080/contacts/6795ca8d6717b5649bdfa595 HTTP/1.1
+
+
+### This is prod test for POST, PUT, DELETE
+### Create contact
 POST https://cse341-homework.onrender.com/contacts HTTP/1.1
 Content-Type: application/json
 
@@ -33,5 +64,17 @@ Content-Type: application/json
     "birthday": "06/23/1988"
 }
 
-###
-DELETE https://cse341-homework.onrender.com/contacts/679560e92d512d2eb4ce9e18 HTTP/1.1
+### PUT contact
+PUT https://cse341-homework.onrender.com/contacts/6793f5b3d4dda804570167b9 HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Paul",
+    "lastName": "Carter",
+    "email": "test1@test.com",
+    "favoriteColor": "Purple",
+    "birthday": "07/12/10"
+}
+
+### Delete contact
+DELETE https://cse341-homework.onrender.com/contacts HTTP/1.1

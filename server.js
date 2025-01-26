@@ -1,5 +1,5 @@
 const express = require('express');
-const bodtParser = require('body-parser');
+const bodyParser = require('body-parser');
 const mongodb = require('./db/connect');
 
 const port = process.env.PORT || 8080;
@@ -7,18 +7,18 @@ const port = process.env.PORT || 8080;
 const app = express();
 
 app
-    .use(bodtParser.json())
-    .use((req, res, next) => {
-        res.setHeader('Acess-Control-Allow-Origin', '*');
-        next();
-    })
-    .use('/', require('./routes'));
+  .use(bodyParser.json())
+  .use((req, res, next) => {
+    res.setHeader('Acess-Control-Allow-Origin', '*');
+    next();
+  })
+  .use('/', require('./routes'));
 
 mongodb.initDb((err, mongodb) => {
-    if (err) {
-        console.log(err);
-    } else {
-        app.listen(port);
-        console.log(`Connected to DB and listening on ${port}`);
-    }
+  if (err) {
+    console.log(err);
+  } else {
+    app.listen(port);
+    console.log(`Connected to DB and listening on ${port}`);
+  }
 });
